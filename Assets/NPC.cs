@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour
 	public Text dialogueText;
 	public string[] dialogue;
 	private int index;
+	public SugarManager sm;
 	
 	public GameObject contButton;
 	public float wordSpeed;
@@ -27,6 +28,7 @@ public class NPC : MonoBehaviour
 			{
 				dialoguePanel.SetActive(true);
 				StartCoroutine(Typing());
+				sm.sugarCount++;
 			}
 		}
 		

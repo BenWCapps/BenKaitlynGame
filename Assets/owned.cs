@@ -8,6 +8,7 @@ public class owned : MonoBehaviour
 	private Rigidbody2D rb;
 	private Vector2 playerDirection;
 	public CoffeeManager cm;
+	public SugarManager sm;
 	
     // Start is called before the first frame update
     void Start()
@@ -36,5 +37,11 @@ public class owned : MonoBehaviour
 			Destroy(other.gameObject);
 			cm.coffeeCount++;
 		}
+		if(other.gameObject.CompareTag("Collectible2"))
+		{
+			Destroy(other.gameObject);
+			sm.sugarCount++;
+		}
+		
 	}
 }

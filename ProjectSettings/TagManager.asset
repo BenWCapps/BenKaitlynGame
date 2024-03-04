@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collectible
   - southWall
+  - Collectible2
   layers:
   - Default
   - TransparentFX
