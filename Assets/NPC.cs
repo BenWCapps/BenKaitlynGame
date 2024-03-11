@@ -28,7 +28,7 @@ public class NPC : MonoBehaviour
 			{
 				dialoguePanel.SetActive(true);
 				StartCoroutine(Typing());
-				sm.sugarCount++;
+				sm.sugarCount = 1;
 			}
 		}
 		
