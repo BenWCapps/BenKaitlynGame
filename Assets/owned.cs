@@ -9,6 +9,7 @@ public class owned : MonoBehaviour
 	private Vector2 playerDirection;
 	public CoffeeManager cm;
 	public SugarManager sm;
+	public SyrupManager sym;
 	
     // Start is called before the first frame update
     void Start()
